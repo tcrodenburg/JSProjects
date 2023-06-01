@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="../style/apiStyle.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="article.html">Articles</a></li>
+            <li><a class="active"  href="calc.html">Macro Calc</a></li>
+            <li><a href="aboutPage.html" >About</a></li> 
+            <li style="float:right"><a class="right" href="contactUs.html">Contact Us</a></li>
+           
+        </ul>
+</div>
+
+    <br>
+
+    <h1 class="topPage">Calorie Calculator</h1>
+
+    <div class="container">
+    <form action="#" method="post" id="bfForm">
+        <label for="height">Height in Inches: </label>
+      <input type="text" name="height" id="height" required /><br>
+        <label for="weight">Weight in Lbs: </label>
+        <input type="text" name="weight" id="weight" required /><br>
+        <label for="age">Age: </label>
+        <input type="text" name="age" id="age" required /><br>
+        <input type="radio" name="gender" id="male" value="male" >
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" >
+        <label for="female">Female</label>
+        <br>
+        <label for="bmi">Body Fat %: </label>
+        <input type="text" name="bmi" id="bmi"> <br>
+        <label for="activityLevel">Activity Level: </label>
+        <select name="activityLevel" id="activityLevel" required />
+        <option value="sedentary">Sedentary</option>
+        <option value="lightlyActive">Lightly Active</option>
+        <option value="moderatelyActive">Moderately Active</option>
+        <option value="highlyActive">Highly Active</option>
+        <option value="extremelyActive">Extremely Active</option> 
+        </select><br>
+        <input type="radio" name="weightGoals" id="loseWeight" value="lose weight" >
+        <label for="loseWeight">Lose weight</label>
+        <input type="radio" name="weightGoals" id="maintainWeight" value="maintain weight" >
+        <label for="maintainWeight">Maintain weight</label>
+        <input type="radio" name="weightGoals" id="gainWeight" value="gain weight" >
+        <label for="gainWeight">Gain weight</label>
+        <br>
+        <input type="radio" name="whichFormula" id="standard" value="standard" >
+        <label for="standard">Standard</label>
+        <input type="radio" name="whichFormula" id="harris-benedict" value="harris-benedict" >
+        <label for="harris-benedict">Harris-Benedict</label>
+        <input type="radio" name="whichFormula" id="katch-mcardle" value="katch-mcardle" >
+        <label for="katch-mcardle">Katch-Mcardle</label>
+        <br>
+        <button class="bfButton" type="button">Submit</button>
+    </form>
+    </div>
+        <br><br>
+        <!-- <h1>Your calculated TDEE is: <span class="tdee"> </span></h1> -->
+        <h1>Your total calories to <span class="goal">_________</span> are: <span class="calories">_________</span> </h1>
+
+        <footer class="footer">Lorem ipsum dolor sit amet consectetur Voluptate quo accusantium adipisci consequatur.</footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
