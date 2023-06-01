@@ -1,0 +1,45 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+li a:hover{
+    background-color: aquamarine;
+}
+
+.active{
+    background-color: aquamarine;
+}
+
+li a:hover:not(.active){
+    background-color: black;
+}
+
+.searchbox{
+    margin-top: 20px;
+}
+
+
+table, th, td{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+}
